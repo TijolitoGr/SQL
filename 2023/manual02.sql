@@ -47,3 +47,6 @@ mysql> DROP USER 'utilizador'@'localhost';
 $ mysql -u utilizador -p
 A opção -p fará com que o cliente MySQL solicite a password do utilizador MySQL para o autenticar.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.7 - Listar todos os Utilizadores:
+mysql> SELECT user FROM mysql.user
+-- Nota: Lista todos os Utlizadores
