@@ -30,7 +30,7 @@ ALTER USER 'utilizador'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pa
 -- Nota bem: Só devem ser concedidas as permissões absolutamente necessárias aos utilizadores.
 
 mysql> GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'utilizador'@'localhost' WITH GRANT OPTION;
--- Nota: Forma insegura do camndo anterior: GRANT ALL PRIVILEGES ON *.* TO 'utilizador'@'localhost' WITH GRANT OPTION;
+-- Nota: Forma insegura do comando anterior: GRANT ALL PRIVILEGES ON *.* TO 'utilizador'@'localhost' WITH GRANT OPTION;
 Após o comando CREATE USER ou GRANT muitos autores sugerem a utilização do comando seguinte de forma a recarregar as tabelas de privilégios na memória:
 mysql> FLUSH PRIVILEGES;
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
